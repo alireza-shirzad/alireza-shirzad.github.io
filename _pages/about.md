@@ -2,24 +2,24 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Though I often go by Ali
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Moore School of Electrical Engineering, Rooms 100 & 102</p>
+    <p>200 South 33rd Street</p>
+    <p>Philadelphia, PA 19104-6389</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! I'm Alireza. I am a first-year Ph.D. student of [Computer and Information Science](https://www.cis.upenn.edu/) at the [University of Pennsylvania](https://www.upenn.edu/), where I am a member of the [Security and Privacy Lab](https://splab.cis.upenn.edu/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I'm interested in applied cryptography, with a focus on designing and realizing efficient proof systems for secure computation.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Before joining Upenn, I earned a master's degree in Secure communication and cryptography from [Sharif University of Technology](https://en.sharif.ir/) where I worked with [Dr. Taraneh Eghlidos](https://sharif.edu/~teghlidos/). I received my Bachelor degree in Electrical Engineering (with a Computer science minor) from [Sharif University of Technology](https://en.sharif.ir/).
