@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Though I often go by Ali
+subtitle: 
 
 profile:
   align: right
@@ -18,7 +18,7 @@ news: true # includes a list of news items
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi! I'm Alireza. I am a first-year Ph.D. student of [Computer and Information Science](https://www.cis.upenn.edu/) at the [University of Pennsylvania](https://www.upenn.edu/), where I am a member of the [Security and Privacy Lab](https://splab.cis.upenn.edu/).
+Hi! I'm Alireza. I am a first-year Ph.D. student of [Computer and Information Science](https://www.cis.upenn.edu/) at the [University of Pennsylvania](https://www.upenn.edu/), where I am a member of the [Security and Privacy Lab](https://splab.cis.upenn.edu/). I am fortunate to be advised by [Pratyush Mishra](https://pratyushmishra.com/)
 
 I'm interested in applied cryptography, with a focus on designing and realizing efficient proof systems for secure computation.
 
