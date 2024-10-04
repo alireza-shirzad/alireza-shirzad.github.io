@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle:
 
 profile:
   align: right
@@ -23,3 +23,5 @@ Hi! I'm Alireza. I am a first-year Ph.D. student of [Computer and Information Sc
 I'm interested in applied cryptography, with a focus on designing and realizing efficient proof systems for secure computation.
 
 Before joining Upenn, I earned a master's degree in Secure communication and cryptography from [Sharif University of Technology](https://en.sharif.ir/) where I worked with [Dr. Taraneh Eghlidos](https://sharif.edu/~teghlidos/). I received my Bachelor degree in Electrical Engineering (with a Computer science minor) from [Sharif University of Technology](https://en.sharif.ir/).
+
+You can fund my CV [here](assets/pdf/cv.pdf)
