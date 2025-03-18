@@ -2,8 +2,8 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
-nav: false
+description: Building things from scratch excites me—especially when it comes to cryptography and SNARKs. Rust is my preferred language.
+nav: true
 nav_order: 4
 ---
 
@@ -35,12 +35,23 @@ nav_order: 4
 {% endif %}
 {% endif %}
 
-{% if site.data.repositories.github_repos %}
+<!-- {% if site.data.repositories.github_repos %}
 
 ## GitHub Repositories
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}
+    {% include repository/repo.liquid repository=repo %}
+  {% endfor %}
+</div>
+{% endif %} -->
+
+
+{% if site.data.repositories.open_source_repos %}
+## My open-source contributions 
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for repo in site.data.repositories.open_source_repos %}
     {% include repository/repo.liquid repository=repo %}
   {% endfor %}
 </div>

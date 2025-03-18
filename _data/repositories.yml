@@ -1,6 +1,5 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - alireza-shirzad
 
 repo_description_lines_max: 2
 
@@ -12,3 +11,11 @@ github_repos:
   - FortAwesome/Font-Awesome
   - mathjax/MathJax
   - jpswalsh/academicons
+
+open_source_repos:
+  - arkworks-rs/snark
+  - arkworks-rs/r1cs-std
+  - arkworks-rs/algebra
+  - arkworks-rs/crypto-primitives
+  - arkworks-rs/groth16
+
