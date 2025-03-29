@@ -18,4 +18,5 @@ open_source_repos:
   - arkworks-rs/algebra
   - arkworks-rs/crypto-primitives
   - arkworks-rs/groth16
+  - arkworks-rs/std
 
