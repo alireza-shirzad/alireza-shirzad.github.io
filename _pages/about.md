@@ -9,6 +9,9 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
+    <div style="margin-top:-10px; margin-bottom:10px; font-size:small; color:gray;">
+      Photo by <a href="https://matanshtepel.com/" target="_blank" style="color:gray;">Matan</a>
+    </div>
     <p>Moore School of Electrical Engineering, Rooms 100 & 102</p>
     <p>200 South 33rd Street</p>
     <p>Philadelphia, PA 19104-6389</p>
