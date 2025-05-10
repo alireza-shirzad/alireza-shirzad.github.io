@@ -19,4 +19,5 @@ open_source_repos:
   - arkworks-rs/crypto-primitives
   - arkworks-rs/groth16
   - arkworks-rs/std
+  - alireza-shirzad/garuda-pari
 
