@@ -12,8 +12,8 @@ profile:
     <div style="margin-top:-10px; margin-bottom:10px; font-size:small; color:gray;">
       Photo by <a href="https://matanshtepel.com/" target="_blank" style="color:gray;">Matan</a>
     </div>
-    <p>Moore School of Electrical Engineering, Rooms 100 & 102</p>
-    <p>200 South 33rd Street</p>
+    <p>Amy Gutmann Hall, Room 342</p>
+    <p>3317 So Chestnut Street</p>
     <p>Philadelphia, PA 19104-6389</p>
 
 news: true # includes a list of news items
