@@ -13,7 +13,7 @@ profile:
       Photo by <a href="https://matanshtepel.com/" target="_blank" style="color:gray;">Matan</a>
     </div>
     <p>Amy Gutmann Hall, Room 342</p>
-    <p>3317 So Chestnut Street</p>
+    <p>3317 Chestnut Street</p>
     <p>Philadelphia, PA 19104-6389</p>
 
 news: true # includes a list of news items
