@@ -63,13 +63,28 @@ layout: default
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
+    <!-- Horizontal Separator -->
+    <hr class="my-4" style="max-width: 200px; margin-left: auto; margin-right: auto; opacity: 0.3;">
+    <!-- Amazon Wishlist -->
+    <div class="amazon-wishlist mt-4 text-center">
+      <p class="mb-2" style="font-size: 0.8rem;">
+        In case you feel generous and wanna buy me something
+      </p>
+      <a href="https://www.amazon.com/hz/wishlist/ls/DIV4ML7P2D6W?ref_=wl_share" target="_blank" class="btn btn-outline-secondary btn-sm">
+        <i class="fab fa-amazon me-2"></i>Amazon Wishlist
+      </a>
+    </div>
+
+    <!-- Horizontal Separator -->
+    <hr class="my-4" style="max-width: 200px; margin-left: auto; margin-right: auto; opacity: 0.3;">
 
     <!-- Social -->
     {% if page.social %}
       <div class="social">
+              <div class="contact-note">{{ site.contact_note }}</div>
+
         <div class="contact-icons">{% include social.liquid %}</div>
 
-        <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
 
