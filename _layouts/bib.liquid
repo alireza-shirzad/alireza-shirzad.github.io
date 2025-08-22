@@ -219,10 +219,44 @@
           <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
         {% endif %}
       {% endif %}
-      {% if entry.video and site.enable_video_embedding %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Video</a>
-      {% elsif entry.video %}
-        <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+      {%- comment -%}
+        Collect all video-like fields into an array: supports
+        - a single `video` field (optionally semicolon-separated), and
+        - `video1`, `video2`, ..., `video8` fields.
+      {%- endcomment -%}
+      {% assign __vids = '' | split: ',' %}
+      {% if entry.video %}
+        {% if entry.video contains ';' %}
+          {% assign __vids = __vids | concat: (entry.video | split: ';') %}
+        {% else %}
+          {% assign __vids = __vids | push: entry.video %}
+        {% endif %}
+      {% endif %}
+      {% for i in (1..8) %}
+        {% assign __k = 'video' | append: i %}
+        {% if entry[__k] %}
+          {% assign __vids = __vids | push: entry[__k] %}
+        {% endif %}
+      {% endfor %}
+      {%- comment -%} trim and drop empties {%- endcomment -%}
+      {% assign vids = '' | split: ',' %}
+      {% for __v in __vids %}
+        {% assign __vtrim = __v | strip %}
+        {% if __vtrim != '' %}
+          {% assign vids = vids | push: __vtrim %}
+        {% endif %}
+      {% endfor %}
+
+      {% if vids.size > 0 %}
+        {% if site.enable_video_embedding %}
+          <a class="abstract btn btn-sm z-depth-0" role="button">
+            {% if vids.size == 1 %}Video{% else %}Videos ({{ vids.size }}){% endif %}
+          </a>
+        {% else %}
+          {% for v in vids %}
+            <a href="{{ v }}" class="btn btn-sm z-depth-0" role="button">Video {{ forloop.index }}</a>
+          {% endfor %}
+        {% endif %}
       {% endif %}
       {% if entry.blog %}
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
@@ -246,6 +280,62 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+      {% endif %}
+
+      {%- comment -%}
+        Collect RELATED NEWS links.
+        Supports:
+        - a single field:  related_news / relatednews / news
+          (semicolon/comma/newline separated)
+        - numbered fields: related_news1..10 / relatednews1..10 / news1..10
+      {%- endcomment -%}
+      {% assign __news_raw = '' | split: ',' %}
+      {% assign __news_bases = 'related_news|relatednews|news' | split: '|' %}
+
+      {%- comment -%} Gather from single fields (and split on multiple separators) {%- endcomment -%}
+      {% for base in __news_bases %}
+        {% if entry[base] %}
+          {% assign nf = entry[base]
+            | replace: ',', ';'
+            | replace: '<br />', ';'
+            | replace: '<br>', ';'
+            | replace: '<br/>', ';'
+            | replace: '&#10;', ';'
+            | replace: '&#13;', ';' %}
+          {% if nf contains ';' %}
+            {% assign __news_raw = __news_raw | concat: (nf | split: ';') %}
+          {% else %}
+            {% assign __news_raw = __news_raw | push: nf %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {%- comment -%} Gather from numbered fields {%- endcomment -%}
+      {% for i in (1..10) %}
+        {% for base in __news_bases %}
+          {% assign key = base | append: i %}
+          {% if entry[key] %}
+            {% assign __news_raw = __news_raw | push: entry[key] %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+
+      {%- comment -%} Trim/dedupe/drop empties {%- endcomment -%}
+      {% assign related_news = '' | split: ',' %}
+      {% for n in __news_raw %}
+        {% assign ntrim = n | strip %}
+        {% if ntrim != '' %}
+          {% unless related_news contains ntrim %}
+            {% assign related_news = related_news | push: ntrim %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+
+      {%- comment -%} Render buttons {%- endcomment -%}
+      {% if related_news.size > 0 %}
+        {% for url in related_news %}
+          <a href="{{ url }}" class="btn btn-sm z-depth-0" role="button">Related news {{ forloop.index }}</a>
+        {% endfor %}
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
@@ -333,6 +423,12 @@
       {% endif %}
     {% endif %}
 
+
+
+
+
+
+
     {% if entry.award %}
       <!-- Hidden Award block -->
       <div class="award hidden d-print-inline">
@@ -356,11 +452,43 @@
       </div>
     {% endif %}
 
-    {% if entry.video and site.enable_video_embedding %}
-      <!-- Hidden video block -->
-      <div class="abstract hidden">
-        <div style="text-align: center;">{% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
-      </div>
-    {% endif %}
+    {%- if site.enable_video_embedding -%}
+      {%- comment -%} Rebuild the vids array as above (Liquid has no block scope reuse). {%- endcomment -%}
+      {% assign __vids = '' | split: ',' %}
+      {% if entry.video %}
+        {% if entry.video contains ';' %}
+          {% assign __vids = __vids | concat: (entry.video | split: ';') %}
+        {% else %}
+          {% assign __vids = __vids | push: entry.video %}
+        {% endif %}
+      {% endif %}
+      {% for i in (1..8) %}
+        {% assign __k = 'video' | append: i %}
+        {% if entry[__k] %}
+          {% assign __vids = __vids | push: entry[__k] %}
+        {% endif %}
+      {% endfor %}
+      {% assign vids = '' | split: ',' %}
+      {% for __v in __vids %}
+        {% assign __vtrim = __v | strip %}
+        {% if __vtrim != '' %}
+          {% assign vids = vids | push: __vtrim %}
+        {% endif %}
+      {% endfor %}
+
+      {% if vids.size > 0 %}
+        <!-- Hidden video block (supports multiple videos) -->
+        <div class="abstract hidden">
+          <div style="text-align: center;">
+            {% for v in vids %}
+              <div style="margin-bottom: 1rem;">
+                {% include video.liquid path=v class="img-fluid rounded z-depth-1" controls=true %}
+                {% if vids.size > 1 %}<div style="margin-top: .25rem; font-size: .9em;">Video {{ forloop.index }}</div>{% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    {%- endif -%}
   </div>
 </div>
