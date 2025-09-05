@@ -13,11 +13,11 @@ github_repos:
   - jpswalsh/academicons
 
 open_source_repos:
+  - alireza-shirzad/garuda-pari
+  - alireza-shirzad/Iron-key
   - arkworks-rs/snark
   - arkworks-rs/r1cs-std
   - arkworks-rs/algebra
   - arkworks-rs/crypto-primitives
   - arkworks-rs/groth16
   - arkworks-rs/std
-  - alireza-shirzad/garuda-pari
-
