@@ -16,7 +16,7 @@ profile:
     <p>3317 Chestnut Street</p>
     <p>Philadelphia, PA 19104-6389</p>
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 # selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
