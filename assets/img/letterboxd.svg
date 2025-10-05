@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" role="img" aria-labelledby="title desc">
+  <title id="title">Letterboxd logo</title>
+  <desc id="desc">Rounded dark rectangle with four colored circles representing the Letterboxd brand.</desc>
+  <rect x="0" y="0" width="160" height="48" rx="12" fill="#1f1f1f"/>
+  <circle cx="56" cy="24" r="12" fill="#ff7f00"/>
+  <circle cx="80" cy="24" r="12" fill="#f4c542"/>
+  <circle cx="104" cy="24" r="12" fill="#4caf50"/>
+  <circle cx="128" cy="24" r="12" fill="#29b6f6"/>
+</svg>
