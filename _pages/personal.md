@@ -17,6 +17,10 @@ profiles:
       <p>My Setar Solo at Sharif</p>
       <p>October 2016</p>
 
+  - align: left
+    content: movies.md
+
+
   # - align: left
   #   content: film.md
   #   image: cinema.png
