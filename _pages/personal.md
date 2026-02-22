@@ -14,7 +14,7 @@ profiles:
     content: setar.md
     # image_circular: false # crops the image to make it circular
     more_info: >
-      <p>My Setar Solo at Sharif</p>
+      <p>My Setar Solo at Aryamehr (Sharif)</p>
       <p>October 2016</p>
 
   - align: left

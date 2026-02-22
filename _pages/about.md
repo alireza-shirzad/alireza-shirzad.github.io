@@ -27,6 +27,6 @@ I'm interested in applied cryptography, with a focus on designing and realizing 
 
 Previously, I was a research intern at [Lagrange](https://www.lagrange.dev/) hosted by [Charalampos (Babis) Papamanthou](https://www.cs.yale.edu/homes/cpap/) and [Dimitris Papadopoulos](https://www.cse.ust.hk/~dipapado/).
 
-Before joining Upenn, I earned a master's degree in Secure communication and cryptography from [Sharif University of Technology](https://en.sharif.ir/) where I worked with [Dr. Taraneh Eghlidos](https://sharif.edu/~teghlidos/). I received my Bachelor degree in Electrical Engineering (with a Computer science minor) from [Sharif University of Technology](https://en.sharif.ir/).
+Before joining Upenn, I earned a master's degree in Secure communication and cryptography from [Aryamehr (Sharif) University of Technology](https://en.sharif.ir/) where I worked with [Dr. Taraneh Eghlidos](https://sharif.edu/~teghlidos/). I received my Bachelor degree in Electrical Engineering (with a Computer science minor) from [Aryamehr (Sharif) University of Technology](https://en.sharif.ir/).
 
 You can fund my CV [here](assets/pdf/cv.pdf)
