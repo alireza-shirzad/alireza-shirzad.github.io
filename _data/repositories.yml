@@ -12,10 +12,12 @@ github_repos:
   - mathjax/MathJax
   - jpswalsh/academicons
 
-open_source_repos:
+authored_repos:
   - alireza-shirzad/garuda-pari
   - alireza-shirzad/Iron-key
   - alireza-shirzad/ark-piop
+
+open_source_repos:
   - arkworks-rs/snark
   - arkworks-rs/r1cs-std
   - arkworks-rs/algebra
