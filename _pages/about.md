@@ -23,7 +23,7 @@ social: true # includes social icons at the bottom of the page
 
 Hi! I'm Alireza. I am a second-year Ph.D. student of [Computer and Information Science](https://www.cis.upenn.edu/) at the [University of Pennsylvania](https://www.upenn.edu/), where I am a member of the [Security and Privacy Lab](https://splab.cis.upenn.edu/). I am fortunate to be advised by [Pratyush Mishra](https://pratyushmishra.com/)
 
-I'm interested in applied cryptography, with a focus on designing and realizing efficient proof systems for real world applications.
+I'm interested in applied cryptography and building provably secure systems for real world applications.
 
 Previously, I was a research intern at [Lagrange](https://www.lagrange.dev/) hosted by [Charalampos (Babis) Papamanthou](https://www.cs.yale.edu/homes/cpap/) and [Dimitris Papadopoulos](https://www.cse.ust.hk/~dipapado/).
 

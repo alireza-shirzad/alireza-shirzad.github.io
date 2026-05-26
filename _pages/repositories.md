@@ -4,7 +4,7 @@ permalink: /repositories/
 title: repositories
 description: Building things from scratch excites me—especially when it comes to cryptography and SNARKs. Rust is my preferred language.
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 {% if site.repo_trophies.enabled and site.data.repositories.github_users %}
