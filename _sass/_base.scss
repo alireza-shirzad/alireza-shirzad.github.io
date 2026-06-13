@@ -731,6 +731,16 @@ footer.sticky-bottom {
           }
         }
 
+        sup {
+          font-size: 0.55em;
+        }
+
+        .annotation {
+          font-style: italic;
+          font-size: 0.9em;
+          margin-top: 0.15rem;
+        }
+
         > em {
           border-bottom: 1px solid;
           font-style: normal;
