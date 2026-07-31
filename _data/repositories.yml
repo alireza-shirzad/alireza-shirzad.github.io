@@ -16,6 +16,7 @@ authored_repos:
   - alireza-shirzad/garuda-pari
   - alireza-shirzad/Iron-key
   - alireza-shirzad/ark-piop
+  - arkworks-rs/truth-table
 
 open_source_repos:
   - arkworks-rs/snark

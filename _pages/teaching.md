@@ -14,7 +14,7 @@ nav_order: 4
   <span class="text-muted">Philadelphia, USA</span>
 </div>
 <ul class="list-unstyled ms-3 mb-4">
-  <li class="d-flex justify-content-between"><span>CIS 7000: Provably Secure Systems with Cryptography</span><span class="text-muted">Fall 2025</span></li>
+  <!-- <li class="d-flex justify-content-between"><span>CIS 7000: Provably Secure Systems with Cryptography</span><span class="text-muted">Fall 2025</span></li> -->
 </ul>
 
 <div class="d-flex justify-content-between align-items-baseline mt-3">
