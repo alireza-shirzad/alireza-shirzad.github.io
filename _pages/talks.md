@@ -18,6 +18,7 @@ nav_order: 3
   <strong>IronDict: Transparent Dictionaries from Polynomial Commitments</strong>
 </div>
 <ul class="list-unstyled ms-3 mb-4">
+  <li class="d-flex justify-content-between"><span>Usenix Security 2026, Baltimore, USA</span><span class="text-muted">August 2026</span></li>
   <li class="d-flex justify-content-between"><span>UPenn Security and Privacy Seminar, Philadelphia, USA</span><span class="text-muted">October 2025</span></li>
   <li class="d-flex justify-content-between"><span>Berkeley Crypto Seminars, Remote</span><span class="text-muted">October 2025</span></li>
 </ul>
@@ -26,6 +27,7 @@ nav_order: 3
   <strong>Garuda and Pari: Smaller and Faster SNARKs via Equifficient Polynomial Commitments</strong>
 </div>
 <ul class="list-unstyled ms-3 mb-4">
+  <li class="d-flex justify-content-between"><span>Usenix Security 2026, Baltimore, USA</span><span class="text-muted">August 2026</span></li>
   <li class="d-flex justify-content-between"><span>Science of Blockchain Conference, Berkeley, USA</span><span class="text-muted">August 2025</span></li>
   <li class="d-flex justify-content-between"><span>SBC 2025 Online Science Fair, Remote</span><span class="text-muted">July 2025</span></li>
   <li class="d-flex justify-content-between"><span>Berkeley Crypto Seminars, Berkeley, USA</span><span class="text-muted">December 2024</span></li>
