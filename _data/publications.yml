@@ -1,0 +1,228 @@
+# ---------------------------------------------------------------------------
+# Publications, newest first. Grouped by `year` on the page.
+#
+# Fields:
+#   key       short id (used as the HTML anchor, e.g. /publications/#dewtwo)
+#   title, year
+#   authors   list of { name, url (optional), star: true (co-first author) }
+#   venue     main venue badge (highlighted)
+#   also      other places it appeared (workshops, talks)      — optional
+#   note      small italic note, e.g. "alphabetical ordering"  — optional
+#   links     pdf, eprint, arxiv, html, code, slides (site-relative), videos: [{label, url}]
+#   abstract  optional
+# ---------------------------------------------------------------------------
+
+- key: aegon
+  title: "Aegon: Self-Auditable Key Transparency"
+  year: 2026
+  authors:
+    - { name: Hossein Hafezi, star: true }
+    - { name: Alireza Shirzad, star: true }
+    - { name: Benedikt Bünz }
+    - { name: Kevin Lewi }
+    - { name: Dillon George }
+    - { name: Joseph Bonneau }
+  venue: Preprint
+  note: "★ co-first authors"
+  links:
+    pdf: https://eprint.iacr.org/2026/1681.pdf
+    eprint: https://eprint.iacr.org/2026/1681
+    code: https://github.com/alireza-shirzad/aegon
+  abstract: >-
+    Key transparency enables a centralized encrypted messaging provider to publicly commit to
+    the public keys it distributes, allowing clients to detect potentially malicious keys.
+    Recent deployments by WhatsApp and iMessage rely on third-party global auditors to detect
+    misbehavior by the key server; no existing system supports auditing efficiently enough to
+    be done by lightweight end users while scaling to billions of users with short epoch
+    latency. We present Aegon, a key transparency scheme designed for global-scale encrypted
+    messaging. Building on ideas from IronDict, Aegon avoids per-epoch work that scales with
+    the full dictionary size: its server computation depends only on the number of updates in
+    the current epoch, enabling epoch latency under a minute (a 500x reduction over IronDict).
+    Aegon further introduces a sharded dictionary design for horizontal scaling and proof
+    caching to safely discard historical snapshots. Our production-grade Rust implementation
+    scales to a dictionary with 4 billion entries; at 1,250 updates per second, Aegon produces
+    constant-size auditor proofs under 30 KB, verifiable in under 65 ms, roughly an 80,000x
+    reduction in audit proof size and a 370x reduction in verify time relative to WhatsApp's
+    AKD, while achieving stronger privacy guarantees.
+
+- key: truthtable
+  title: "TruthTable: A Verifiable Query Engine"
+  year: 2026
+  authors:
+    - { name: Bharath Namboothiry, star: true }
+    - { name: Alireza Shirzad, star: true }
+    - { name: Spencer Solit }
+    - { name: Ryan Marcus }
+    - { name: Pratyush Mishra, url: https://pratyushmishra.com }
+  venue: SeQureDB 2026
+  also: [ZKProof VIII]
+  note: "★ co-first authors"
+  links:
+    pdf: https://eprint.iacr.org/2026/1260.pdf
+    eprint: https://eprint.iacr.org/2026/1260
+    code: https://github.com/arkworks-rs/truth-table
+    videos:
+      - { label: Talk, url: https://www.youtube.com/watch?v=gECEl1r4A1g }
+  abstract: >-
+    We present TruthTable, a verifiable database engine that allows a prover to produce a
+    succinct proof that convinces a verifier of the correct execution of the verifier's SQL
+    query over the prover's committed database. TruthTable supports a large subset of SQL,
+    enabling it to prove 17 out of 22 queries in the standard TPC-H benchmark, the widest
+    support out of all prior work. TruthTable's proofs are small, and fast to generate and
+    verify: on the TPC-H benchmark with a database of a million rows, average proving time is
+    55 seconds, average verification time is 32 ms, and average proof size is 24 kB. Compared to
+    prior work, proving times are between 6.3x and 63x better, while verification times and
+    proof sizes are competitive. TruthTable achieves this via a co-design of cryptography and
+    database techniques: a new polynomial representation of database tables with subprotocols
+    for proving relational operators on it, and a query planner that optimizes for minimal
+    proving time rather than execution time.
+
+- key: modpcs
+  title: "Relaxed Modular PCS from Arbitrary PCS and Applications to SNARKs for Integers"
+  year: 2026
+  authors:
+    - { name: Alireza Shirzad }
+    - { name: Sriram Sridhar }
+    - { name: Dimitrios Papadopoulos, url: https://www.cse.ust.hk/~dipapado/ }
+    - { name: Charalampos Papamanthou, url: https://www.cs.yale.edu/homes/cpap/ }
+  venue: TCC 2026
+  also: [ZKProof VIII]
+  links:
+    pdf: https://eprint.iacr.org/2026/347.pdf
+    eprint: https://eprint.iacr.org/2026/347
+    videos:
+      - { label: Talk, url: https://www.youtube.com/watch?v=jEaHG_WXKj0 }
+  abstract: >-
+    Modular Polynomial Commitment Schemes (Mod-PCS) extend standard PCSs by enabling provable
+    evaluation of integer polynomials modulo a random modulus, providing a natural foundation
+    for SNARKs that operate directly over large integers without emulating arithmetic in finite
+    fields. We present the first black-box information-theoretic transformation that builds
+    relaxed Mod-PCS from any standard PCS. Instantiating it with a tensor-code PCS yields the
+    first relaxed Mod-PCS with O(log(N+B)) proof size and verifier time, which is transparent
+    and plausibly post-quantum secure. Using this scheme, we obtain the first fully succinct
+    SNARK for the Customizable Constraint System over the integers, with O(BN log(BN)) prover
+    time and O(log(N+B)) verifier time and proof size. Along the way we introduce a
+    modulus-switching technique for integer polynomials, a batched integer commitment from any
+    PCS, and improved arguments for integer addition, multiplication, convolution, and general
+    Diophantine relations.
+
+- key: irondict
+  title: "IronDict: Transparent Dictionaries from Polynomial Commitments"
+  year: 2025
+  authors:
+    - { name: Hossein Hafezi, star: true }
+    - { name: Alireza Shirzad, star: true }
+    - { name: Benedikt Bünz }
+    - { name: Joseph Bonneau }
+  venue: USENIX Security 2026
+  also: [RWC 2026]
+  note: "★ co-first authors"
+  links:
+    pdf: https://eprint.iacr.org/2025/1580.pdf
+    eprint: https://eprint.iacr.org/2025/1580
+    code: https://github.com/alireza-shirzad/iron-key
+    videos:
+      - { label: Talk, url: https://youtu.be/h2VLVcz3d7U }
+  abstract: >-
+    We present IronDict, a transparent dictionary construction based on polynomial commitment
+    schemes. Transparent dictionaries enable an untrusted server to maintain a mutable
+    dictionary and provably serve clients lookup queries. A major open challenge is supporting
+    efficient auditing by lightweight clients. Previous solutions either incurred high server
+    costs (limiting throughput) or high client lookup verification costs, hindering them from
+    modern messaging key transparency deployments with billions of users. Our construction
+    makes black-box use of a generic multilinear polynomial commitment scheme and inherits its
+    security notions, i.e. binding and zero-knowledge. We implement our construction with the
+    recent KZH scheme and find that a dictionary with 1 billion entries can be verified on a
+    consumer-grade laptop in 35 ms, a 300x improvement over the state of the art, while also
+    achieving 150,000x smaller proofs (8 KB). In addition, our construction ensures perfect
+    privacy with concretely efficient costs for both the client and the server. We also show
+    fast-forwarding techniques based on incremental verifiable computation (IVC) and
+    checkpoints to enable even faster client auditing.
+
+- key: dewtwo
+  title: "DewTwo: A Transparent PCS with Quasi-Linear Prover, Logarithmic Verifier and 4.5KB Proofs from Falsifiable Assumptions"
+  year: 2025
+  authors:
+    - { name: Benedikt Bünz }
+    - { name: Tushar Mopuri }
+    - { name: Alireza Shirzad }
+    - { name: Sriram Sridhar }
+  venue: CRYPTO 2025
+  note: alphabetical ordering
+  links:
+    pdf: https://eprint.iacr.org/2025/129.pdf
+    eprint: https://eprint.iacr.org/2025/129
+    slides: /assets/pdf/dewtwo.pdf
+    videos:
+      - { label: Talk, url: https://www.youtube.com/watch?v=1EZDYJjThjw }
+  abstract: >-
+    We construct the first polynomial commitment scheme (PCS) that has a transparent setup,
+    quasi-linear prover time, log N verifier time, and log log N proof size, for multilinear
+    polynomials of size N. Concretely, we have the smallest proof size amongst transparent PCS,
+    with proof size less than 4.5KB for N ≤ 2^30. We prove that our scheme is secure entirely
+    under falsifiable assumptions about groups of unknown order. The scheme significantly
+    improves on the prior work of Dew (PKC 2023), which has super-cubic prover time and relies
+    on the Generic Group Model (a non-falsifiable assumption). Along the way, we make several
+    contributions that are of independent interest: PoKEMath, a protocol for efficiently
+    proving that an arbitrary predicate over committed integer vectors holds; SIPA, a
+    bulletproofs-style inner product argument in groups of unknown order; we also distill out
+    what prior work required from the Generic Group Model and frame this as a falsifiable
+    assumption.
+
+- key: garuda-pari
+  title: "Garuda and Pari: Smaller and Faster SNARKs via Equifficient Polynomial Commitments"
+  year: 2024
+  authors:
+    - { name: Michel Dellepere }
+    - { name: Pratyush Mishra, url: https://pratyushmishra.com }
+    - { name: Alireza Shirzad }
+  venue: USENIX Security 2026
+  also: [zkSummit 2025, SBC 2025]
+  note: alphabetical ordering
+  links:
+    pdf: https://eprint.iacr.org/2024/1245.pdf
+    eprint: https://eprint.iacr.org/2024/1245
+    code: https://github.com/alireza-shirzad/garuda-pari
+    slides: /assets/pdf/Garuda-Pari.pdf
+    videos:
+      - { label: Talk (zkSummit), url: "https://www.youtube.com/watch?v=zFn_4IYbbxQ&list=PLH43_pWBaY28tDop1jwGdVqdi98LiUQg9" }
+      - { label: Talk (SBC), url: "https://youtu.be/6qFjjl9s688?t=8420" }
+  abstract: >-
+    SNARKs are powerful cryptographic primitives that allow a prover to produce a succinct
+    proof of a computation. Two key goals of SNARK research are to minimize the size of the
+    proof and to minimize the time required to generate the proof. In this work, we present new
+    SNARK constructions that push the frontier on both of these goals. Our first construction,
+    Pari, is a SNARK that achieves the smallest proof size amongst all known SNARKs: two group
+    elements and two field elements, which, when instantiated with the BLS12-381 curve, totals
+    just 160 bytes, smaller than Groth16 and Polymath. Pari achieves the lowest known gas cost
+    for on-chain SNARK verification. Our second construction, Garuda, is a SNARK that reduces
+    proof generation time by supporting, for the first time, arbitrary "custom" gates and free
+    linear gates. Both constructions rely on a new cryptographic primitive: "equifficient"
+    polynomial commitment (EPC) schemes that enforce that committed polynomials have the same
+    representation in particular bases. Our constructions are obtained via a new compiler that
+    combines polynomial IOPs with our EPC schemes; as a matter of independent interest, we show
+    that this argument achieves state-restoration soundness if the underlying PIOP does.
+
+- key: msthesis
+  title: "Designing a Succinct Argument System Based on GKR Protocol via Polynomial Commitment Schemes"
+  year: 2023
+  authors:
+    - { name: Alireza Shirzad }
+  venue: M.Sc. Thesis
+  also: [Sharif University of Technology]
+  links:
+    html: https://repository.sharif.edu/resource/503663/designing-a-succinct-argument-system-based-on-gkr-protocol-via-polynomial-commitment-schemes
+
+- key: coldchain
+  title: "Cold Supply Chain Planning including Smart Contracts: An Intelligent Blockchain-based Approach"
+  year: 2022
+  authors:
+    - { name: Soroush Goodarzi }
+    - { name: Vahid Kayvanfar }
+    - { name: Alireza Haji }
+    - { name: Alireza Shirzad }
+  venue: arXiv
+  links:
+    pdf: https://arxiv.org/pdf/2209.10410
+    arxiv: https://arxiv.org/abs/2209.10410
+    code: https://github.com/alireza-shirzad/Vaccination_Blockchain

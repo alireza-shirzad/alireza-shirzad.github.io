@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------------------
+# GitHub repositories shown on /code/. Stars, forks, language and description
+# are refreshed live from the GitHub API in the browser; the values here are
+# the static fallback (and what search engines see).
+# ---------------------------------------------------------------------------
+github_user: alireza-shirzad
+
+sections:
+  - title: Research code
+    blurb: Reference implementations of my papers. Rust, mostly on top of arkworks.
+    repos:
+      - { name: alireza-shirzad/garuda-pari, description: A Rust implementation of the Garuda and Pari SNARKs, language: Rust, stars: 2 }
+      - { name: alireza-shirzad/iron-key, description: Proof-of-concept implementation of IronDict for academic benchmarking, language: Rust, stars: 3 }
+      - { name: arkworks-rs/truth-table, description: "TruthTable: a verifiable query engine", language: Rust, stars: 6 }
+      - { name: alireza-shirzad/aegon, description: Implementation of Aegon self-auditable key transparency, language: Rust, stars: 0 }
+      - { name: alireza-shirzad/ark-piop, description: A framework for building polynomial IOPs on arkworks, language: Rust, stars: 2 }
+      - { name: alireza-shirzad/ark-guo, description: Abstractions and implementations of groups of unknown order, language: Rust, stars: 0 }
+
+  - title: Open-source contributions
+    blurb: Ecosystem libraries I contribute to.
+    repos:
+      - { name: arkworks-rs/snark, description: Interfaces for relations and SNARKs for these relations, language: Rust, stars: 917 }
+      - { name: arkworks-rs/algebra, description: "Libraries for finite field, elliptic curve, and polynomial arithmetic", language: Rust, stars: 888 }
+      - { name: arkworks-rs/groth16, description: A Rust implementation of the Groth16 zkSNARK, language: Rust, stars: 348 }
+      - { name: arkworks-rs/crypto-primitives, description: Interfaces and implementations of cryptographic primitives with R1CS constraints, language: Rust, stars: 263 }
+      - { name: arkworks-rs/r1cs-std, description: "R1CS constraints for bits, fields, and elliptic curves", language: Rust, stars: 196 }
+      - { name: arkworks-rs/std, description: A standard library wrapper for the arkworks ecosystem, language: Rust, stars: 42 }
+
+  - title: Tools & older projects
+    blurb: Things I built along the way.
+    repos:
+      - { name: alireza-shirzad/cryptemp, description: A LaTeX template for writing papers in cryptography, language: TeX, stars: 0 }
+      - { name: alireza-shirzad/Cordic_tanh, description: Verilog and MATLAB implementation of tanh using the CORDIC algorithm, language: Verilog, stars: 11 }
+      - { name: alireza-shirzad/Scrambler, description: Scrambler and descrambler implementation in Verilog HDL, language: Verilog, stars: 2 }
+      - { name: alireza-shirzad/Vaccination_Blockchain, description: Smart contracts for the cold supply chain paper, language: Solidity, stars: 0 }

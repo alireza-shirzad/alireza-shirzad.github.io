@@ -1,0 +1,17 @@
+# Newest first. `text` is Markdown.
+- date: 2026-08-15
+  text: Presented **IronDict** and **Garuda & Pari** at USENIX Security 2026 in Baltimore.
+- date: 2026-05-10
+  text: Gave a talk on **TruthTable** at the NYU Cryptography and Security Seminar.
+- date: 2026-03-01
+  text: "**Relaxed Modular PCS from Arbitrary PCS** is on ePrint ([2026/347](https://eprint.iacr.org/2026/347)), joint work from my Lagrange internship."
+- date: 2025-09-01
+  text: "**IronDict** is online ([ePrint 2025/1580](https://eprint.iacr.org/2025/1580)) — a transparent dictionary that verifies a billion-entry dictionary in 35 ms."
+- date: 2025-05-03
+  text: "**DewTwo** was accepted to CRYPTO 2025! A transparent PCS with 4.5 KB proofs from falsifiable assumptions. [Paper](https://eprint.iacr.org/2025/129)."
+- date: 2025-05-03
+  text: Joining [Lagrange Labs](https://www.lagrange.dev/) this summer as a research intern, hosted by Charalampos Papamanthou and Dimitrios Papadopoulos.
+- date: 2025-01-28
+  text: "**DewTwo** is up on [ePrint](https://eprint.iacr.org/2025/129) — the smallest known transparent polynomial commitment scheme, based solely on falsifiable assumptions in groups of unknown order."
+- date: 2024-10-03
+  text: Giving a series of talks on **Garuda and Pari** at UPenn, NYU, UMD, Berkeley, and CMU this fall.

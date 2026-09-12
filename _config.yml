@@ -1,0 +1,69 @@
+# ---------------------------------------------------------------------------
+# Site settings — edit these freely. Content lives in _data/*.yml and _posts/.
+# ---------------------------------------------------------------------------
+title: Alireza Shirzad
+tagline: Cryptographer · CS PhD student at the University of Pennsylvania
+description: >-
+  Alireza Shirzad is a cryptographer and Ph.D. student in Computer and Information
+  Science at the University of Pennsylvania, working on SNARKs, polynomial
+  commitments, and provably secure systems.
+url: "https://alireza-shirzad.github.io"   # your GitHub Pages domain
+baseurl: ""                                # "" for a user site, "/repo-name" for a project site
+lang: en
+timezone: America/New_York
+
+author:
+  name: Alireza Shirzad
+  email: alrshir@seas.upenn.edu
+  twitter: alrshirzad
+
+twitter:
+  username: alrshirzad
+  card: summary
+
+# Blog
+blog_name: Pseudo-random Thoughts
+blog_description: Notes on cryptography, proof systems, and whatever else I'm thinking about.
+permalink: /blog/:year/:title/
+excerpt_separator: "<!--more-->"
+
+# Build
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  math_engine: null            # leave $$ ... $$ untouched; KaTeX renders it in the browser
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      math: true
+      comments: false
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - new-post.sh
+  - vendor
+  - node_modules
+  - .github
+  - "*.sh"

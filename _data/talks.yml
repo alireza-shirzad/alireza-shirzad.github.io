@@ -1,0 +1,26 @@
+# Grouped by paper/topic, newest first. `pub` links the heading to a publication key.
+- title: "TruthTable: A Verifiable Query Engine"
+  pub: truthtable
+  events:
+    - { venue: NYU Cryptography and Security Seminar, location: "New York, USA", date: May 2026 }
+
+- title: "IronDict: Transparent Dictionaries from Polynomial Commitments"
+  pub: irondict
+  events:
+    - { venue: USENIX Security 2026, location: "Baltimore, USA", date: Aug 2026 }
+    - { venue: UPenn Security and Privacy Seminar, location: "Philadelphia, USA", date: Oct 2025 }
+    - { venue: Berkeley Crypto Seminar, location: Remote, date: Oct 2025 }
+
+- title: "Garuda and Pari: Smaller and Faster SNARKs via Equifficient Polynomial Commitments"
+  pub: garuda-pari
+  events:
+    - { venue: USENIX Security 2026, location: "Baltimore, USA", date: Aug 2026 }
+    - { venue: Science of Blockchain Conference (SBC), location: "Berkeley, USA", date: Aug 2025 }
+    - { venue: SBC 2025 Online Science Fair, location: Remote, date: Jul 2025 }
+    - { venue: Berkeley Crypto Seminar, location: "Berkeley, USA", date: Dec 2024 }
+    - { venue: CMU LayerZero Crypto Seminar, location: "Pittsburgh, USA", date: Dec 2024 }
+    - { venue: Stanford Security Seminar, location: "Stanford, USA", date: Dec 2024 }
+    - { venue: Sumcheck Builders Club, location: Remote, date: Nov 2024 }
+    - { venue: University of Maryland Crypto Reading Group, location: "College Park, USA", date: Nov 2024 }
+    - { venue: NYU Cryptography and Security Seminar, location: "New York, USA", date: Oct 2024 }
+    - { venue: UPenn Security and Privacy Seminar, location: "Philadelphia, USA", date: Oct 2024 }

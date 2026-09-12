@@ -1,0 +1,25 @@
+# Two sections: instructor and ta. Each is a list of institutions with courses.
+instructor:
+  - institution: Sharif Information and Communication Technology (Sharif ICT)
+    location: "Tehran, Iran"
+    courses:
+      - { name: Blockchain and Web3, term: "Jan 2021 – Sep 2023" }
+
+ta:
+  - institution: University of Pennsylvania
+    location: "Philadelphia, USA"
+    courses:
+      - { name: "CIS 5560: Cryptography", term: Spring 2026 }
+      - { name: "CIS 5510: Computer and Network Security", term: Fall 2024 }
+      - { name: "CIS 5560: Cryptography", term: Spring 2024 }
+  - institution: Sharif University of Technology
+    location: "Tehran, Iran"
+    courses:
+      - { name: Linux/Python Lab, term: Fall 2022 }
+      - { name: IoT Security, term: Fall 2022 }
+      - { name: Object Oriented Programming (Head TA), term: Spring 2022 }
+      - { name: Provable Security, term: Spring 2022 }
+      - { name: Numerical Computation, term: Fall 2021 }
+      - { name: Signals and Systems, term: Spring 2021 }
+      - { name: Object Oriented Programming (Head TA), term: Spring 2021 }
+      - { name: Data Communication Networks, term: Spring 2020 }

@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------------------
+# Everything shown on the home page. Edit here, not in index.md.
+# ---------------------------------------------------------------------------
+name: Alireza Shirzad
+short_name: Alireza
+role: Ph.D. student · Computer and Information Science · University of Pennsylvania
+photo: /assets/img/profile.jpg
+photo_credit:
+  text: Photo by Matan
+  url: https://matanshtepel.com/
+
+address:
+  - Amy Gutmann Hall, Room 342
+  - 3317 Chestnut Street
+  - Philadelphia, PA 19104-6389
+
+emails:
+  - address: alrshir@seas.upenn.edu
+    label: academic
+  - address: alr.shirzad@gmail.com
+    label: personal
+
+contact_note: Email is the best way to reach me.
+
+links:
+  - label: GitHub
+    icon: github
+    url: https://github.com/alireza-shirzad
+  - label: Google Scholar
+    icon: scholar
+    url: https://scholar.google.com/citations?user=fi89WkkAAAAJ
+  - label: DBLP
+    icon: dblp
+    url: https://dblp.org/pid/329/6038.html
+  - label: ORCID
+    icon: orcid
+    url: https://orcid.org/0009-0009-7161-4978
+  - label: LinkedIn
+    icon: linkedin
+    url: https://www.linkedin.com/in/alireza-shirzad-526101141/
+  - label: X
+    icon: x
+    url: https://x.com/alrshirzad
+  - label: CV
+    icon: file
+    url: /assets/pdf/cv.pdf
