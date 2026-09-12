@@ -114,10 +114,19 @@ main.wrap { padding-block: 2.5rem 4rem; min-height: calc(100vh - var(--nav-h) - 
 .hero .role { color: var(--accent); font-family: var(--mono); font-size: .92rem; margin-bottom: 1.2rem; }
 .hero-photo { margin: 0; }
 .hero-photo img { width: 100%; border-radius: var(--radius); border: 1px solid var(--border-strong); display: block; box-shadow: 0 10px 40px rgba(0,0,0,.45); }
+.hero-side { display: flex; flex-direction: column; gap: .9rem; }
+.hero-contact { display: flex; flex-direction: column; gap: .6rem; font-size: .86rem; color: var(--text-muted); line-height: 1.5; }
+.hero-contact-row { display: flex; gap: .55rem; align-items: flex-start; }
+.hero-contact-row .icon { color: var(--accent); margin-top: .2rem; }
+.hero-contact address { font-style: normal; }
+.hero-contact a { color: var(--text); font-family: var(--mono); font-size: .8rem; }
+.hero-contact a:hover { color: var(--accent); }
+.hero-contact-note { color: var(--text-faint); font-size: .78rem; margin-top: .2rem; }
 .hero-photo figcaption { font-size: .78rem; color: var(--text-faint); text-align: right; margin-top: .4rem; }
 @media (max-width: 720px) {
   .hero { grid-template-columns: 1fr; }
-  .hero-photo { order: -1; max-width: 240px; }
+  .hero-side { order: -1; }
+  .hero-photo { max-width: 240px; }
   .hero h1 { font-size: 1.9rem; }
 }
 

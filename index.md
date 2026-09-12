@@ -45,25 +45,25 @@ Before joining Penn, I earned a master's degree in Secure Communication and Cryp
     </div>
   </div>
 
-  <figure class="hero-photo">
-    <img src="{{ me.photo | relative_url }}" alt="Portrait of {{ me.name }}" width="500" height="375">
-    {% if me.photo_credit %}<figcaption>{{ me.photo_credit.text }}{% if me.photo_credit.url %} · <a href="{{ me.photo_credit.url }}" target="_blank" rel="noopener">link</a>{% endif %}</figcaption>{% endif %}
-  </figure>
+  <aside class="hero-side">
+    <figure class="hero-photo">
+      <img src="{{ me.photo | relative_url }}" alt="Portrait of {{ me.name }}" width="500" height="375">
+      {% if me.photo_credit %}<figcaption>{{ me.photo_credit.text }}{% if me.photo_credit.url %} · <a href="{{ me.photo_credit.url }}" target="_blank" rel="noopener">link</a>{% endif %}</figcaption>{% endif %}
+    </figure>
+    <div class="hero-contact">
+      <div class="hero-contact-row">
+        {% include icon.html name="pin" %}
+        <address>{% for line in me.address %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</address>
+      </div>
+      <div class="hero-contact-row">
+        {% include icon.html name="mail" %}
+        <div>{% for e in me.emails %}<a href="mailto:{{ e.address }}">{{ e.address }}</a>{% unless forloop.last %}<br>{% endunless %}{% endfor %}
+        {% if me.contact_note %}<div class="hero-contact-note">{{ me.contact_note }}</div>{% endif %}</div>
+      </div>
+    </div>
+  </aside>
 </section>
 
-<section class="contact-grid">
-  <div class="card">
-    <h4>{% include icon.html name="pin" %} Office</h4>
-    <address>{% for line in me.address %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</address>
-  </div>
-  <div class="card">
-    <h4>{% include icon.html name="mail" %} Email</h4>
-    <ul>
-      {% for e in me.emails %}<li><a href="mailto:{{ e.address }}"><code>{{ e.address }}</code></a> <small>({{ e.label }})</small></li>{% endfor %}
-    </ul>
-    {% if me.contact_note %}<p class="muted" style="margin-top:.5rem;font-size:.85rem">{{ me.contact_note }}</p>{% endif %}
-  </div>
-</section>
 
 <h2>News</h2>
 <ul class="news-list">
