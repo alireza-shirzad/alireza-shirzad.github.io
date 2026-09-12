@@ -5,6 +5,23 @@ permalink: /
 ---
 {% assign me = site.data.profile %}
 <section class="hero">
+  <aside class="hero-side">
+    <figure class="hero-photo">
+      <img src="{{ me.photo | relative_url }}" alt="Portrait of {{ me.name }}" width="500" height="375">
+      {% if me.photo_credit %}<figcaption>{{ me.photo_credit.text }}{% if me.photo_credit.url %} · <a href="{{ me.photo_credit.url }}" target="_blank" rel="noopener">link</a>{% endif %}</figcaption>{% endif %}
+    </figure>
+    <div class="hero-contact">
+      <div class="hero-contact-row">
+        {% include icon.html name="pin" %}
+        <address>{% for line in me.address %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</address>
+      </div>
+      <div class="hero-contact-row">
+        {% include icon.html name="mail" %}
+        <div>{% for e in me.emails %}<a href="mailto:{{ e.address }}">{{ e.address }}</a>{% unless forloop.last %}<br>{% endunless %}{% endfor %}
+        {% if me.contact_note %}<div class="hero-contact-note">{{ me.contact_note }}</div>{% endif %}</div>
+      </div>
+    </div>
+  </aside>
   <div class="hero-text">
     <h1>{{ me.name }}</h1>
     {% if me.persian_name or me.pronunciation %}
@@ -45,23 +62,6 @@ Before joining Penn, I earned a master's degree in Secure Communication and Cryp
     </div>
   </div>
 
-  <aside class="hero-side">
-    <figure class="hero-photo">
-      <img src="{{ me.photo | relative_url }}" alt="Portrait of {{ me.name }}" width="500" height="375">
-      {% if me.photo_credit %}<figcaption>{{ me.photo_credit.text }}{% if me.photo_credit.url %} · <a href="{{ me.photo_credit.url }}" target="_blank" rel="noopener">link</a>{% endif %}</figcaption>{% endif %}
-    </figure>
-    <div class="hero-contact">
-      <div class="hero-contact-row">
-        {% include icon.html name="pin" %}
-        <address>{% for line in me.address %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</address>
-      </div>
-      <div class="hero-contact-row">
-        {% include icon.html name="mail" %}
-        <div>{% for e in me.emails %}<a href="mailto:{{ e.address }}">{{ e.address }}</a>{% unless forloop.last %}<br>{% endunless %}{% endfor %}
-        {% if me.contact_note %}<div class="hero-contact-note">{{ me.contact_note }}</div>{% endif %}</div>
-      </div>
-    </div>
-  </aside>
 </section>
 
 

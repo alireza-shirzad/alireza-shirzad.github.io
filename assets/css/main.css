@@ -104,7 +104,7 @@ main.wrap { padding-block: 2.5rem 4rem; min-height: calc(100vh - var(--nav-h) - 
 .page-desc { color: var(--text-muted); font-size: 1.05rem; margin-top: -.3rem; }
 
 /* --- Home / hero -------------------------------------------------------- */
-.hero { display: grid; grid-template-columns: 1fr 250px; gap: 2.2rem; align-items: start; }
+.hero::after { content: ""; display: block; clear: both; }
 .hero h1 { font-size: 2.3rem; margin-bottom: .2rem; }
 .name-sub { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem .9rem; margin: 0 0 .4rem; }
 .persian-name { font-family: "Vazirmatn", "Noto Naskh Arabic", "Geeza Pro", "Tahoma", serif; font-size: 1.35rem; color: var(--text-muted); line-height: 1.4; }
@@ -114,7 +114,7 @@ main.wrap { padding-block: 2.5rem 4rem; min-height: calc(100vh - var(--nav-h) - 
 .hero .role { color: var(--accent); font-family: var(--mono); font-size: .92rem; margin-bottom: 1.2rem; }
 .hero-photo { margin: 0; }
 .hero-photo img { width: 100%; border-radius: var(--radius); border: 1px solid var(--border-strong); display: block; box-shadow: 0 10px 40px rgba(0,0,0,.45); }
-.hero-side { display: flex; flex-direction: column; gap: .9rem; }
+.hero-side { float: right; width: 250px; margin: .4rem 0 1rem 2rem; display: flex; flex-direction: column; gap: .9rem; }
 .hero-contact { display: flex; flex-direction: column; gap: .6rem; font-size: .86rem; color: var(--text-muted); line-height: 1.5; }
 .hero-contact-row { display: flex; gap: .55rem; align-items: flex-start; }
 .hero-contact-row .icon { color: var(--accent); margin-top: .2rem; }
@@ -124,8 +124,7 @@ main.wrap { padding-block: 2.5rem 4rem; min-height: calc(100vh - var(--nav-h) - 
 .hero-contact-note { color: var(--text-faint); font-size: .78rem; margin-top: .2rem; }
 .hero-photo figcaption { font-size: .78rem; color: var(--text-faint); text-align: right; margin-top: .4rem; }
 @media (max-width: 720px) {
-  .hero { grid-template-columns: 1fr; }
-  .hero-side { order: -1; }
+  .hero-side { float: none; width: auto; margin: 0 0 1.5rem; }
   .hero-photo { max-width: 240px; }
   .hero h1 { font-size: 1.9rem; }
 }
