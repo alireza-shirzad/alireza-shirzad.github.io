@@ -2,14 +2,12 @@
    alireza-shirzad — dark academic theme
    ========================================================================== */
 
-/* Self-hosted calligraphic font for the Persian name. Drop the licensed file
-   into assets/fonts/ (see assets/fonts/README.md) and uncomment this block.
+/* Self-hosted Persian nastaliq for the name (assets/fonts/, SIL Open Font License). */
 @font-face {
-  font-family: "SiahMashq";
-  src: url("/assets/fonts/SiahMashq.woff2") format("woff2");
+  font-family: "IranNastaliq";
+  src: url("/assets/fonts/IranNastaliq-Web.woff2") format("woff2");
   font-display: swap;
 }
-*/
 :root {
   --bg: #0b0d10;
   --bg-elev: #111419;
@@ -115,10 +113,10 @@ main.wrap { padding-block: 2.5rem 4rem; min-height: calc(100vh - var(--nav-h) - 
 /* --- Home / hero -------------------------------------------------------- */
 .hero::after { content: ""; display: block; clear: both; }
 .hero h1 { font-size: 2.3rem; margin-bottom: .2rem; }
-.name-sub { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1rem; margin: 0 0 .5rem; }
+.name-sub { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1rem; margin: .35rem 0 .4rem; }
 .persian-wrap { display: inline-flex; align-items: center; gap: .55rem; }
 .persian-label { font-size: .82rem; color: var(--text-faint); font-style: italic; }
-.persian-name { font-family: "SiahMashq", "Noto Nastaliq Urdu", "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 1.75rem; color: var(--text-muted); line-height: 1; padding: .1rem 0 .55rem; }
+.persian-name { font-family: "IranNastaliq", "Noto Nastaliq Urdu", "Geeza Pro", serif; font-size: 1.9rem; color: var(--text-muted); line-height: 1.6; padding: .35rem 0 .1rem; }
 .pron { display: inline-flex; align-items: center; gap: .35rem; font-family: var(--mono); font-size: .78rem; color: var(--text-faint); padding: .15rem .55rem; border: 1px solid var(--border); border-radius: 999px; background: var(--bg-card); cursor: pointer; }
 .pron:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
 .pron .icon { width: .9em; height: .9em; }

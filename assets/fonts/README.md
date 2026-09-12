@@ -1,7 +1,4 @@
-Self-hosted fonts go here.
+Self-hosted fonts.
 
-To use SiahMashq (commercial, by Shahab Siavash / Si47ash Fonts) for the Persian name:
-1. Buy a webfont license: https://47fonts.com/siyahmashq-calligraphic-arabic-font/ or MyFonts.
-2. Save the file here as `SiahMashq.woff2` (or `.ttf`, and adjust the `@font-face` rule).
-3. Uncomment the `@font-face` block at the top of `assets/css/main.css`.
-The font stack already lists "SiahMashq" first, so nothing else needs to change.
+- IranNastaliq-Web.woff2 — Persian nastaliq used for the Persian name on the home page.
+  SIL Open Font License; see IranNastaliq-LICENSE.txt. Source: https://github.com/font-store/font-IranNastaliq
