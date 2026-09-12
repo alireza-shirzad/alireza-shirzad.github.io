@@ -9,8 +9,7 @@ persian_name: علیرضا شیرزاد
 # to show a play button with your own recording instead.
 pronunciation:
   text: ah-lee-reh-ZAH sheer-ZAHD
-  url: https://www.youtube.com/watch?v=ckaln_KtyQw
-  audio:
+  audio: /assets/audio/name.mp3
 role: Ph.D. student · Computer and Information Science · University of Pennsylvania
 photo: /assets/img/profile.jpg
 photo_credit:
