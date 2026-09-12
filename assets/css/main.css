@@ -106,8 +106,8 @@ main.wrap { padding-block: 2.5rem 4rem; min-height: calc(100vh - var(--nav-h) - 
 /* --- Home / hero -------------------------------------------------------- */
 .hero::after { content: ""; display: block; clear: both; }
 .hero h1 { font-size: 2.3rem; margin-bottom: .2rem; }
-.name-sub { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem .9rem; margin: 0 0 .4rem; }
-.persian-name { font-family: "Vazirmatn", "Noto Naskh Arabic", "Geeza Pro", "Tahoma", serif; font-size: 1.35rem; color: var(--text-muted); line-height: 1.4; }
+.name-sub { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1rem; margin: 0 0 .5rem; }
+.persian-name { font-family: "Noto Nastaliq Urdu", "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 1.75rem; color: var(--text-muted); line-height: 1; padding: .1rem 0 .55rem; }
 .pron { display: inline-flex; align-items: center; gap: .35rem; font-family: var(--mono); font-size: .78rem; color: var(--text-faint); padding: .15rem .55rem; border: 1px solid var(--border); border-radius: 999px; background: var(--bg-card); cursor: pointer; }
 .pron:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
 .pron .icon { width: .9em; height: .9em; }
