@@ -1,5 +1,5 @@
 ---
-title: Personal
+title: Misc.
 description: Stuff I do outside of research.
 permalink: /personal/
 ---
