@@ -4,11 +4,11 @@
 name: Alireza Shirzad
 short_name: Alireza
 persian_name: علیرضا شیرزاد
-# Pronunciation shown under the name. `text` is the phonetic hint.
+# Pronunciation button under the name. `text` is the button label.
 # `url` links to an external recording; set `audio` to a file in assets/ (e.g. /assets/audio/name.mp3)
 # to show a play button with your own recording instead.
 pronunciation:
-  text: ah-lee-reh-ZAH sheer-ZAHD
+  text: Pronunciation
   audio: /assets/audio/name.mp3
 role: Ph.D. student · Computer and Information Science · University of Pennsylvania
 photo: /assets/img/profile.jpg
