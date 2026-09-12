@@ -26,7 +26,7 @@ permalink: /
     <h1>{{ me.name }}</h1>
     {% if me.persian_name or me.pronunciation %}
     <p class="name-sub">
-      {% if me.persian_name %}<span class="persian-name" lang="fa" dir="rtl">{{ me.persian_name }}</span>{% endif %}
+      {% if me.persian_name %}<span class="persian-wrap"><span class="persian-label">in Persian:</span> <span class="persian-name" lang="fa" dir="rtl">{{ me.persian_name }}</span></span>{% endif %}
       {% if me.pronunciation %}
         {% if me.pronunciation.audio %}
         <button class="pron" type="button" onclick="this.querySelector('audio').play()" title="Play pronunciation">
