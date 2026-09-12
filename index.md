@@ -7,6 +7,25 @@ permalink: /
 <section class="hero">
   <div class="hero-text">
     <h1>{{ me.name }}</h1>
+    {% if me.persian_name or me.pronunciation %}
+    <p class="name-sub">
+      {% if me.persian_name %}<span class="persian-name" lang="fa" dir="rtl">{{ me.persian_name }}</span>{% endif %}
+      {% if me.pronunciation %}
+        {% if me.pronunciation.audio %}
+        <button class="pron" type="button" onclick="this.querySelector('audio').play()" title="Play pronunciation">
+          {% include icon.html name="play" %}<span>{{ me.pronunciation.text }}</span>
+          <audio preload="none" src="{{ me.pronunciation.audio | relative_url }}"></audio>
+        </button>
+        {% elsif me.pronunciation.url %}
+        <a class="pron" href="{{ me.pronunciation.url }}" target="_blank" rel="noopener" title="Hear it pronounced">
+          {% include icon.html name="play" %}<span>{{ me.pronunciation.text }}</span>
+        </a>
+        {% else %}
+        <span class="pron">{{ me.pronunciation.text }}</span>
+        {% endif %}
+      {% endif %}
+    </p>
+    {% endif %}
     <p class="role">{{ me.role }}</p>
 
 <div markdown="1">
