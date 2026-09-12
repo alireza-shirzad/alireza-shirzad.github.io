@@ -11,10 +11,11 @@ persian_name: علیرضا شیرزاد
 #   text: Pronunciation
 #   audio: /assets/audio/name.mp3
 role: Ph.D. student · Computer and Information Science · University of Pennsylvania
-photo: /assets/img/profile.jpg
-photo_credit:
-  text: Photo by Matan
-  url: https://matanshtepel.com/
+photo: /assets/img/profile.jpeg
+# Optional caption under the photo, e.g. a credit:
+# photo_credit:
+#   text: Photo by Matan
+#   url: https://matanshtepel.com/
 
 address:
   - Amy Gutmann Hall, Room 342
