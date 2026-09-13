@@ -6,15 +6,12 @@
 github_user: alireza-shirzad
 
 sections:
-  - title: Research code
-    blurb: Reference implementations of my papers. Rust, mostly on top of arkworks.
+  - title: Creator & lead contributor
+    blurb: Reference implementations of my papers that I designed and lead. Rust, on top of arkworks.
     repos:
       - { name: alireza-shirzad/garuda-pari, description: A Rust implementation of the Garuda and Pari SNARKs, language: Rust, stars: 2 }
-      - { name: alireza-shirzad/iron-key, description: Proof-of-concept implementation of IronDict for academic benchmarking, language: Rust, stars: 3 }
       - { name: arkworks-rs/truth-table, description: "TruthTable: a verifiable query engine", language: Rust, stars: 6 }
       - { name: alireza-shirzad/aegon, description: Implementation of Aegon self-auditable key transparency, language: Rust, stars: 0 }
-      - { name: alireza-shirzad/ark-piop, description: A framework for building polynomial IOPs on arkworks, language: Rust, stars: 2 }
-      - { name: alireza-shirzad/ark-guo, description: Abstractions and implementations of groups of unknown order, language: Rust, stars: 0 }
 
   - title: Open-source contributions
     blurb: Ecosystem libraries I contribute to.

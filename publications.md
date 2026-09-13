@@ -10,4 +10,3 @@ permalink: /publications/
 {% for pub in pubs %}{% if pub.year == y %}{% include publication.html pub=pub %}{% endif %}{% endfor %}
 {% endfor %}
 
-<p class="legend"><span class="star">★</span> co-first authors · Authors in theoretical cryptography papers are often ordered alphabetically.</p>

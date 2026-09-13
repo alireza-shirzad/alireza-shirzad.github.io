@@ -54,8 +54,8 @@
     - { name: Spencer Solit }
     - { name: Ryan Marcus }
     - { name: Pratyush Mishra, url: https://pratyushmishra.com }
-  venue: SeQureDB 2026
-  also: [ZKProof VIII]
+  venue: Preprint
+  also: [ZKProof VIII,SeQureDB 2026]
   note: "★ co-first authors"
   links:
     pdf: https://eprint.iacr.org/2026/1260.pdf

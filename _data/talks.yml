@@ -1,4 +1,9 @@
 # Grouped by paper/topic, newest first. `pub` links the heading to a publication key.
+- title: "Aegon: Self-Auditable Key Transparency"
+  pub: aegon
+  events:
+    - { venue: Meta, location: "Remote", date: Sep 2026}
+
 - title: "TruthTable: A Verifiable Query Engine"
   pub: truthtable
   events:

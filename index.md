@@ -65,7 +65,7 @@ Before joining Penn, I earned a master's degree in Secure Communication and Cryp
 </section>
 
 
-<h2>News</h2>
+<!-- <h2>News</h2>
 <ul class="news-list">
   {% for n in site.data.news limit: 6 %}
   <li>
@@ -73,4 +73,4 @@ Before joining Penn, I earned a master's degree in Secure Communication and Cryp
     <div>{{ n.text | markdownify }}</div>
   </li>
   {% endfor %}
-</ul>
+</ul> -->
