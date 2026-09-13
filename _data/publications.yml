@@ -212,17 +212,3 @@
   also: [Sharif University of Technology]
   links:
     html: https://repository.sharif.edu/resource/503663/designing-a-succinct-argument-system-based-on-gkr-protocol-via-polynomial-commitment-schemes
-
-- key: coldchain
-  title: "Cold Supply Chain Planning including Smart Contracts: An Intelligent Blockchain-based Approach"
-  year: 2022
-  authors:
-    - { name: Soroush Goodarzi }
-    - { name: Vahid Kayvanfar, url: "https://elmi.hbku.edu.qa/en/persons/vahid-kayvanfar/" }
-    - { name: Alireza Haji, url: "https://scholar.google.com/citations?user=acK-JG0AAAAJ" }
-    - { name: Alireza Shirzad }
-  venue: arXiv
-  links:
-    pdf: https://arxiv.org/pdf/2209.10410
-    arxiv: https://arxiv.org/abs/2209.10410
-    code: https://github.com/alireza-shirzad/Vaccination_Blockchain
