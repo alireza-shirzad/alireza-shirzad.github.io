@@ -7,7 +7,7 @@ github_user: alireza-shirzad
 
 sections:
   - title: Creator & lead contributor
-    blurb: Reference implementations of my papers that I designed and lead. Rust, on top of arkworks.
+    blurb: Projects I created and lead.
     repos:
       - { name: alireza-shirzad/garuda-pari, description: A Rust implementation of the Garuda and Pari SNARKs, language: Rust, stars: 2 }
       - { name: arkworks-rs/truth-table, description: "TruthTable: a verifiable query engine", language: Rust, stars: 6 }

@@ -11,8 +11,8 @@
   url: /code/
 - title: Misc.
   url: /personal/
-- title: Blog
-  url: /blog/
+# - title: Blog
+#   url: /blog/
 - title: CV
   url: /assets/pdf/cv.pdf
   external: true
