@@ -7,7 +7,7 @@ description: >-
   Alireza Shirzad is a cryptographer and Ph.D. student in Computer and Information
   Science at the University of Pennsylvania, working on SNARKs, polynomial
   commitments, and provably secure systems.
-url: "https://alireza-shirzad.github.io"   # your GitHub Pages domain
+url: "https://shirz.ad"                    # custom domain (also in the CNAME file)
 baseurl: ""                                # "" for a user site, "/repo-name" for a project site
 lang: en
 timezone: America/New_York
