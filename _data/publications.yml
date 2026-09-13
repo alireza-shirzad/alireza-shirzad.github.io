@@ -16,12 +16,12 @@
   title: "Aegon: Self-Auditable Key Transparency"
   year: 2026
   authors:
-    - { name: Hossein Hafezi, star: true }
+    - { name: Hossein Hafezi, star: true, url: "https://hosseinhafezi.com/" }
     - { name: Alireza Shirzad, star: true }
-    - { name: Benedikt Bünz }
-    - { name: Kevin Lewi }
-    - { name: Dillon George }
-    - { name: Joseph Bonneau }
+    - { name: Benedikt Bünz, url: "https://cs.nyu.edu/~bb/" }
+    - { name: Kevin Lewi, url: "https://scholar.google.com/citations?user=NRa0_kEAAAAJ" }
+    - { name: Dillon George, url: "https://engineering.fb.com/author/dillon-george/" }
+    - { name: Joseph Bonneau, url: "https://jbonneau.com/" }
   venue: Preprint
   note: "★ co-first authors"
   links:
@@ -49,10 +49,10 @@
   title: "TruthTable: A Verifiable Query Engine"
   year: 2026
   authors:
-    - { name: Bharath Namboothiry, star: true }
+    - { name: Bharath Namboothiry, star: true, url: "https://scholar.google.com/citations?user=2cB1wKIAAAAJ" }
     - { name: Alireza Shirzad, star: true }
-    - { name: Spencer Solit }
-    - { name: Ryan Marcus }
+    - { name: Spencer Solit, url: "https://github.com/ssolit" }
+    - { name: Ryan Marcus, url: "https://rmarcus.info/" }
     - { name: Pratyush Mishra, url: https://pratyushmishra.com }
   venue: Preprint
   also: [ZKProof VIII,SeQureDB 2026]
@@ -82,7 +82,7 @@
   year: 2026
   authors:
     - { name: Alireza Shirzad }
-    - { name: Sriram Sridhar }
+    - { name: Sriram Sridhar, url: "https://people.eecs.berkeley.edu/~srirams/" }
     - { name: Dimitrios Papadopoulos, url: https://www.cse.ust.hk/~dipapado/ }
     - { name: Charalampos Papamanthou, url: https://www.cs.yale.edu/homes/cpap/ }
   venue: TCC 2026
@@ -110,10 +110,10 @@
   title: "IronDict: Transparent Dictionaries from Polynomial Commitments"
   year: 2025
   authors:
-    - { name: Hossein Hafezi, star: true }
+    - { name: Hossein Hafezi, star: true, url: "https://hosseinhafezi.com/" }
     - { name: Alireza Shirzad, star: true }
-    - { name: Benedikt Bünz }
-    - { name: Joseph Bonneau }
+    - { name: Benedikt Bünz, url: "https://cs.nyu.edu/~bb/" }
+    - { name: Joseph Bonneau, url: "https://jbonneau.com/" }
   venue: USENIX Security 2026
   also: [RWC 2026]
   note: "★ co-first authors"
@@ -143,10 +143,10 @@
   title: "DewTwo: A Transparent PCS with Quasi-Linear Prover, Logarithmic Verifier and 4.5KB Proofs from Falsifiable Assumptions"
   year: 2025
   authors:
-    - { name: Benedikt Bünz }
-    - { name: Tushar Mopuri }
+    - { name: Benedikt Bünz, url: "https://cs.nyu.edu/~bb/" }
+    - { name: Tushar Mopuri, url: "https://tmopuri.com/" }
     - { name: Alireza Shirzad }
-    - { name: Sriram Sridhar }
+    - { name: Sriram Sridhar, url: "https://people.eecs.berkeley.edu/~srirams/" }
   venue: CRYPTO 2025
   note: alphabetical ordering
   links:
@@ -173,7 +173,7 @@
   title: "Garuda and Pari: Smaller and Faster SNARKs via Equifficient Polynomial Commitments"
   year: 2024
   authors:
-    - { name: Michel Dellepere }
+    - { name: Michel Dellepere, url: "https://www.linkedin.com/in/michel-dellepere-4ab8b1115/" }
     - { name: Pratyush Mishra, url: https://pratyushmishra.com }
     - { name: Alireza Shirzad }
   venue: USENIX Security 2026
@@ -218,8 +218,8 @@
   year: 2022
   authors:
     - { name: Soroush Goodarzi }
-    - { name: Vahid Kayvanfar }
-    - { name: Alireza Haji }
+    - { name: Vahid Kayvanfar, url: "https://elmi.hbku.edu.qa/en/persons/vahid-kayvanfar/" }
+    - { name: Alireza Haji, url: "https://scholar.google.com/citations?user=acK-JG0AAAAJ" }
     - { name: Alireza Shirzad }
   venue: arXiv
   links:
