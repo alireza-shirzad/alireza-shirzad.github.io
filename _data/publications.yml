@@ -23,7 +23,7 @@
     - { name: Alex Ozdemir, url: "https://faculty.cc.gatech.edu/~aozdemir/" }
     - { name: Yuxiang Qiu, url: "https://yuxqiu.github.io/" }
     - { name: Alireza Shirzad }
-  venue: In submission
+  venue: IEEE S&P 2027
   note: alphabetical ordering
   # links:            # add when the paper is public, e.g.
   #   pdf: https://eprint.iacr.org/2026/XXXX.pdf
