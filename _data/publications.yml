@@ -12,6 +12,26 @@
 #   abstract  optional
 # ---------------------------------------------------------------------------
 
+- key: zippel
+  title: "Zippel: A Language, Compiler, Runtime, and Analyzer for ZK Proof Systems"
+  year: 2026
+  authors:
+    - { name: Sebastian Angel, url: "https://www.cis.upenn.edu/~sga001/" }
+    - { name: Sydnie-Shea Cohen, url: "https://www.linkedin.com/in/sydnie-shea-cohen-16a518182/" }
+    - { name: Eleftherios Ioannidis, url: "https://elefthei.github.io/" }
+    - { name: Pratyush Mishra, url: https://pratyushmishra.com }
+    - { name: Alex Ozdemir, url: "https://faculty.cc.gatech.edu/~aozdemir/" }
+    - { name: Yuxiang Qiu, url: "https://yuxqiu.github.io/" }
+    - { name: Alireza Shirzad }
+  venue: In submission
+  note: alphabetical ordering
+  # links:            # add when the paper is public, e.g.
+  #   pdf: https://eprint.iacr.org/2026/XXXX.pdf
+  #   eprint: https://eprint.iacr.org/2026/XXXX
+  #   code: https://github.com/...
+  abstract: >-
+    This paper introduces Zippel, a language, compiler, runtime, and analyzer for cryptographic proof systems. Zippel lets developers write proof systems with ease using syntax that mimics pseudocode in cryptography papers. It also eliminates entire classes of vulnerabilities by construction owing to its type system and runtime. For example, Zippel automatically synchronizes protocol transcripts and correctly applies the Fiat-Shamir transform. Zippel also has fully automated static analyses that confirm whether a protocol is complete and knowledge sound given only the protocol's description. We have implemented over 30 proof systems in Zippel including Schnorr, KZG, Groth16, Bulletproofs, Hyrax, Spartan, HyperPlonk, Pari, and Dekart. Our experimental evaluation shows that Zippel programs are competitive with hand-optimized implementations on multi-core hardware, so Zippel's security and implementation benefits do not come at a cost.
+
 - key: aegon
   title: "Aegon: Self-Auditable Key Transparency"
   year: 2026
