@@ -7,6 +7,7 @@
 - title: "TruthTable: A Verifiable Query Engine"
   pub: truthtable
   events:
+    - { venue: Yale Applied Cryptography Seminar, location: "New Haven, USA", date: Sep 2026 }
     - { venue: NYU Cryptography and Security Seminar, location: "New York, USA", date: May 2026 }
 
 - title: "IronDict: Transparent Dictionaries from Polynomial Commitments"
