@@ -6,13 +6,14 @@
 github_user: alireza-shirzad
 
 sections:
-  - title: Creator & lead contributor
-    blurb: Projects I created and lead.
+  - title: Co-creator & co-lead
+    blurb: Projects I co-created and co-lead.
     repos:
       - { name: alireza-shirzad/garuda-pari, description: A Rust implementation of the Garuda and Pari SNARKs, language: Rust, stars: 2 }
       - { name: arkworks-rs/truth-table, description: "TruthTable: a verifiable query engine", language: Rust, stars: 6 }
       - { name: alireza-shirzad/aegon, description: Implementation of Aegon self-auditable key transparency, language: Rust, stars: 0 }
       - { name: alireza-shirzad/ark-piop, description: A framework for building polynomial IOPs and compiling them into SNARKs on arkworks, language: Rust, stars: 3 }
+      - { name: eniac/zippel, description: "The Zippel language for cryptographic proof systems, compiles into optimized and safe prover and verifier code.", language: Rust, stars: 47 }
 
   - title: Open-source contributions
     blurb: Ecosystem libraries I contribute to.
