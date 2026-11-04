@@ -64,6 +64,24 @@ Before joining Penn, I earned a master's degree in Secure Communication and Cryp
 
 </section>
 
+{% assign up = site.data.upcoming %}
+{% assign now = site.time | date: "%s" | plus: 0 %}
+{% assign shown = 0 %}
+{% for n in up %}{% assign ts = n.date | date: "%s" | plus: 86400 %}{% if n.date == nil or ts > now %}{% assign shown = shown | plus: 1 %}{% endif %}{% endfor %}
+{% if shown > 0 %}
+<h2>Coming up</h2>
+<ul class="news-list">
+  {% for n in up %}
+  {% assign ts = n.date | date: "%s" | plus: 86400 %}
+  {% if n.date == nil or ts > now %}
+  <li>
+    <span class="news-date">{% if n.when %}{{ n.when }}{% else %}{{ n.date | date: "%b %-d, %Y" }}{% endif %}</span>
+    <div>{{ n.text | markdownify }}</div>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+{% endif %}
 
 <!-- <h2>News</h2>
 <ul class="news-list">

@@ -1,0 +1,9 @@
+# Things on the horizon, soonest first. `text` is Markdown.
+# Give each item either a `date` (YYYY-MM-DD, shown as "Nov 9, 2026" and hidden
+# automatically once the day has passed) or a free-form `when` (e.g. "Spring 2027").
+- date: 2026-11-09
+  text: Presenting **TruthTable** at the Amazon Seminar, 2 PM.
+- date: 2026-11-12
+  text: "Presenting **Relaxed Modular PCS from Arbitrary PCS and Applications to SNARKs for Integers** at TCC 2026 in Manhattan: [Link](https://tcc.iacr.org/2026/program.php)"
+- date: 2026-11-16
+  text: "Presenting **TruthTable** at the Schlein Center for Cybersecurity Seminar at Penn, 12 PM: [Link](https://cybersecurity.engineering.upenn.edu/seminar-series/alireza-shirzad-fall-2026/)"

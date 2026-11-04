@@ -5,7 +5,7 @@
 /* Self-hosted Persian nastaliq for the name (assets/fonts/, SIL Open Font License). */
 @font-face {
   font-family: "IranNastaliq";
-  src: url("/assets/fonts/IranNastaliq-Web.woff2") format("woff2");
+  src: url("/assets/fonts/IranNastaliq-Web.woff2?v=2") format("woff2");
   font-display: swap;
 }
 :root {
@@ -51,6 +51,12 @@ h1 { font-size: 2rem; }
 h2 { font-size: 1.4rem; margin-top: 2.2rem; padding-bottom: .35rem; border-bottom: 1px solid var(--border); }
 h3 { font-size: 1.12rem; margin-top: 1.6rem; }
 p { margin: 0 0 1em; }
+/* Justify long-form prose: homepage intro, page body text, blog posts */
+.hero-text > div > p, .page > p, .page-desc, .post-content p, .post-subtitle {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
 img { max-width: 100%; height: auto; }
 hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
 small, .muted { color: var(--text-muted); }
