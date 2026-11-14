@@ -1,4 +1,9 @@
 # Grouped by paper/topic, newest first. `pub` links the heading to a publication key.
+- title: "Relaxed Modular PCS from Arbitrary PCS and Applications to SNARKs for Integers"
+  pub: modpcs
+  events:
+    - { venue: TCC 2026, location: "New York, USA", date: Nov 2026 }
+
 - title: "Aegon: Self-Auditable Key Transparency"
   pub: aegon
   events:
@@ -7,6 +12,7 @@
 - title: "TruthTable: A Verifiable Query Engine"
   pub: truthtable
   events:
+    - { venue: Amazon Seminar, location: "Remote", date: Nov 2026 }
     - { venue: Yale Applied Cryptography Seminar, location: "New Haven, USA", date: Sep 2026 }
     - { venue: NYU Cryptography and Security Seminar, location: "New York, USA", date: May 2026 }
 
