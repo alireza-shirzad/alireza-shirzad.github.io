@@ -82,7 +82,8 @@
     eprint: https://eprint.iacr.org/2026/1260
     code: https://github.com/arkworks-rs/truth-table
     videos:
-      - { label: Talk, url: https://www.youtube.com/watch?v=gECEl1r4A1g }
+      - { label: Talk (ZKProof), url: https://www.youtube.com/watch?v=gECEl1r4A1g }
+      - { label: Talk (Seminar), url: https://www.youtube.com/watch?v=cWWniVTyiWM }
   abstract: >-
     We present TruthTable, a verifiable database engine that allows a prover to produce a
     succinct proof that convinces a verifier of the correct execution of the verifier's SQL
