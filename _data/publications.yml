@@ -208,6 +208,7 @@
     videos:
       - { label: Talk (zkSummit), url: "https://www.youtube.com/watch?v=zFn_4IYbbxQ&list=PLH43_pWBaY28tDop1jwGdVqdi98LiUQg9" }
       - { label: Talk (SBC), url: "https://youtu.be/6qFjjl9s688?t=8420" }
+      - { label: Talk (USENIX), url: https://youtu.be/sF3ApyPjguw }
   abstract: >-
     SNARKs are powerful cryptographic primitives that allow a prover to produce a succinct
     proof of a computation. Two key goals of SNARK research are to minimize the size of the
